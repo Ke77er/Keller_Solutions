@@ -13,13 +13,14 @@
         <a href="#insights">Insights</a>
         <a href="#labs">Labs</a>
         <button class="admin-toggle" @click="showAuth = true" aria-label="Admin login">
-          •
+          A
         </button>
       </nav>
     </header>
 
     <main class="layout">
       <section class="sidebar" id="posts">
+        <div class="back-link">← Voltar para o blog</div>
         <div class="section-header">
           <p class="eyebrow">Cybersecurity Blog</p>
           <h1>Foco total em proteção, análise e resposta</h1>
@@ -47,6 +48,16 @@
             <h3>{{ post.title }}</h3>
             <p>{{ post.excerpt }}</p>
           </article>
+        </div>
+
+        <div class="sidebar-meta">
+          <h4>Resumo rápido</h4>
+          <ul>
+            <li>Monitoramento 24/7</li>
+            <li>Resposta a incidentes</li>
+            <li>Conteúdo técnico detalhado</li>
+          </ul>
+          <button class="primary small">Adicionar aos favoritos</button>
         </div>
       </section>
 
